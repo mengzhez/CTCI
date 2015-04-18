@@ -2,7 +2,7 @@
 #include<unordered_set>
 using namespace std;
 
-bool UniqueCharacters(string s)
+bool uniqueCharacters(string s)
 {
 	int length = s.size();
 	unordered_set<char> set;
