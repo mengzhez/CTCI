@@ -1,0 +1,9 @@
+Documents/
+
+Debug/
+*.sdf
+*.sln
+*.vcxproj
+*.filters
+*.opensdf
+*.suo
