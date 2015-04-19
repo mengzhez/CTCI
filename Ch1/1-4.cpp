@@ -1,8 +1,10 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
-void replaceSpaces(char* str, int n)
+void replaceSpaces(string &str)
 {
+	int n = str.size();
 	if (n <= 2)
 		return;
 
@@ -22,8 +24,8 @@ void replaceSpaces(char* str, int n)
 
 void main()
 {
-	char str[] = "Mr  John Smith      ";
-	replaceSpaces(str, (sizeof(str) / sizeof(char) - 1));
+	string str = "Mr  John Smith      ";
+	replaceSpaces(str);
 	cout << str << "\n";
 	system("pause");
 }
