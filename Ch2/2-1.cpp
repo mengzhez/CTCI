@@ -33,17 +33,26 @@ Node* removeDuplicates(Node* head)
 	if (head == NULL || head->next == NULL)
 		return head;
 
-	Node* p = head;
-	while (p->next != NULL)
+	Node* p1 = head;
+	Node* p2 = head;
+	while (p1->next != NULL)
 	{
-		if (p->value == p->next->value)
+		p2 = head;
+		while (p2 != p1->next)
 		{
-			Node* temp = p->next->next;
-			delete p->next;
-			p->next = temp;
+			if (p2->value == p1->next->value)
+			{
+				Node* temp = p1->next->next;
+				delete p1->next;
+				p1->next = temp;
+				break;
+			}
+
+			p2 = p2->next;
 		}
-		else
-			p = p->next;
+
+		if (p2 == p1->next)
+			p1 = p1->next;
 	}
 
 	return head;
@@ -52,9 +61,10 @@ Node* removeDuplicates(Node* head)
 void main()
 {
 	Node* head = new Node(1);
-	head = addToTail(head, 1);
+	head = addToTail(head, 4);
 	head = addToTail(head, 1);
 	head = addToTail(head, 3);
+	head = addToTail(head, 1);
 	head = addToTail(head, 3);
 	head = addToTail(head, 7);
 
