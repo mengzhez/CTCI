@@ -2,56 +2,54 @@
 #include<stack>
 using namespace std;
 
-class Stack
+template <class Type> class Stack
 {
 private:
-	stack<int> values;
-	stack<int> mins;
+	stack<Type> _values;
+	stack<Type> _mins;
 
 public:
 	Stack()
-	{
-	}
+	{}
 
 	~Stack()
-	{
-	}
+	{}
 
-	void push(int n)
+	void push(Type val)
 	{
-		values.push(n);
+		_values.push(val);
 
-		if (mins.empty())
-			mins.push(n);
+		if (_mins.empty())
+			_mins.push(val);
 		else
-			mins.push(min(mins.top(), n));
+			_mins.push(std::min(_mins.top(), val));
 	}
 
 	void pop()
 	{
-		values.pop();
-		mins.pop();
+		_values.pop();
+		_mins.pop();
 	}
 
 	int top()
 	{
-		return values.top();
+		return _values.top();
 	}
 
-	int minTop()
+	int min()
 	{
-		return mins.top();
+		return _mins.top();
 	}
 
 	bool empty()
 	{
-		return values.empty();
+		return _values.empty();
 	}
 };
 
 void main()
 {
-	Stack s;
+	Stack<int> s;
 	s.push(3);
 	s.push(5);
 	s.push(2);
@@ -59,7 +57,7 @@ void main()
 
 	while (!s.empty())
 	{
-		cout << s.minTop() << ", ";
+		cout << s.min() << ", ";
 		s.pop();
 	}
 	cout << "\n";
