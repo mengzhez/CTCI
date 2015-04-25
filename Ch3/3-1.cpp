@@ -2,18 +2,18 @@
 #include<vector>
 using namespace std;
 
-template <class Type> class Stack
+template <class Type> class MyStack
 {
 private:
 	vector<vector<Type>> _values;
 
 public:
-	Stack()
+	MyStack()
 	{
 		_values = vector<vector<Type>>(3, vector<Type>());
 	}
 
-	~Stack()
+	~MyStack()
 	{}
 
 	void push(Type val, int n)
@@ -47,7 +47,7 @@ public:
 
 void main()
 {
-	Stack<int> s = Stack<int>();
+	MyStack<int> s = MyStack<int>();
 	s.push(6, 0);
 	s.push(8, 0);
 	s.push(11, 1);
