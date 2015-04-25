@@ -63,6 +63,6 @@ void main()
 	q.pop();
 	q.pop();
 
-	cout << (q.empty() ? "true" : "false") << "\n";
+	cout << (q.empty() ? "True" : "False") << "\n";
 	system("pause");
 }
