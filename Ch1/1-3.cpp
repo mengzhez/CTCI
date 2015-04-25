@@ -33,6 +33,6 @@ void main()
 	string str1 = "abcdefa";
 	string str2 = "cfgabde";
 	bool b = isPermutation(str1, str2);
-	cout << (b ? "true" : "false") << "\n";
+	cout << (b ? "True" : "False") << "\n";
 	system("pause");
 }
