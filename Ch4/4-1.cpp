@@ -20,14 +20,21 @@ int checkBalance(Node* root)
 
 void main()
 {
+	//      1
+	//     / \
+	//    2   6    
+	//   / \
+	//  3   4
+	//       \
+	//        5
 	Node* root = new Node(1);
 	root->left = new Node(2);
 	root->left->left = new Node(3);
 	root->left->right = new Node(4);
-	//root->left->right->right = new Node(5);
+	root->left->right->right = new Node(5);
 	root->right = new Node(6);
 
 	int n = checkBalance(root);
-	cout << (n != -1 ? "balanced" : "not balanced") << "\n";
+	cout << (n != -1 ? "True" : "False") << "\n";
 	system("pause");
 }
