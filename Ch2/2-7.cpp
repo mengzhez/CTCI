@@ -44,6 +44,6 @@ void main()
 	head = addToTail(head, 1);
 
 	bool b = isPalindrome(head);
-	cout << (b ? "true" : "false") << "\n";
+	cout << (b ? "True" : "False") << "\n";
 	system("pause");
 }
