@@ -52,10 +52,10 @@ void main()
 	s.push(8, 0);
 	s.push(11, 1);
 	s.push(22, 2);
-	cout << s.top(0) << ", " << s.top(1) << ", " << s.top(2) << "\n";
+	cout << s.top(0) << "; " << s.top(1) << "; " << s.top(2) << "\n";
 
 	s.pop(2);
-	cout << (s.empty(0) ? "true" : "false") << ", " << (s.empty(1) ? "true" : "false") << ", " << (s.empty(2) ? "true" : "false") << "\n";
+	cout << (s.empty(0) ? "True" : "False") << "; " << (s.empty(1) ? "True" : "False") << "; " << (s.empty(2) ? "True" : "False") << "\n";
 	
 	system("pause");
 }
