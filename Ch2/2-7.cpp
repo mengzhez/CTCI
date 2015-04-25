@@ -1,33 +1,8 @@
 #include<iostream>
 #include<stack>
+#include "LinkedList.h"
+
 using namespace std;
-
-class Node
-{
-public:
-	int value;
-	Node* next;
-
-	Node(int v)
-	{
-		value = v;
-		next = NULL;
-	}
-};
-
-Node* addToTail(Node* head, int n)
-{
-	Node* node = new Node(n);
-	if (head == NULL)
-		return node;
-
-	Node* p = head;
-	while(p->next != NULL)
-		p = p->next;
-
-	p->next = node;
-	return head;
-}
 
 bool isPalindrome(Node* head)
 {
