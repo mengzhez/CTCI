@@ -20,6 +20,6 @@ bool uniqueCharacters(string str)
 void main()
 {
 	bool b = uniqueCharacters("abcdefghijklmnopqrstuvwxyz!");
-	cout << (b ? "true" : "false") << "\n";
+	cout << (b ? "True" : "False") << "\n";
 	system("pause");
 }
