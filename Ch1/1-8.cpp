@@ -27,6 +27,6 @@ void main()
 	string str1 = "waterbottle";
 	string str2 = "erbottlewat";
 	bool b = isRotation(str1, str2);
-	cout << (b ? "true" : "false") << "\n";
+	cout << (b ? "True" : "False") << "\n";
 	system("pause");
 }
