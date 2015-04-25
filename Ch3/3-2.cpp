@@ -2,17 +2,17 @@
 #include<stack>
 using namespace std;
 
-template <class Type> class Stack
+template <class Type> class MyStack
 {
 private:
 	stack<Type> _values;
 	stack<Type> _mins;
 
 public:
-	Stack()
+	MyStack()
 	{}
 
-	~Stack()
+	~MyStack()
 	{}
 
 	void push(Type val)
@@ -49,7 +49,7 @@ public:
 
 void main()
 {
-	Stack<int> s;
+	MyStack<int> s;
 	s.push(3);
 	s.push(5);
 	s.push(2);
