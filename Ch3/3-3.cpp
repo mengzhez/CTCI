@@ -92,7 +92,7 @@ void main()
 	s.push(4);
 	s.push(5);
 	cout << s.top() << "\n";
-	cout << (s.empty() ? "true" : "false") << "\n";
+	cout << (s.empty() ? "True" : "False") << "\n";
 
 	s.pop();
 	s.pop();
@@ -103,6 +103,6 @@ void main()
 
 	s.pop();
 	s.pop();
-	cout << (s.empty() ? "true" : "false") << "\n";
+	cout << (s.empty() ? "True" : "False") << "\n";
 	system("pause");
 }
