@@ -1,43 +1,7 @@
 #include<iostream>
+#include "LinkedList.h"
+
 using namespace std;
-
-class Node
-{
-public:
-	int value;
-	Node* next;
-
-	Node(int v)
-	{
-		value = v;
-		next = NULL;
-	}
-};
-
-Node* addToHead(Node* head, int n)
-{
-	Node* node = new Node(n);
-	if (head == NULL)
-		return node;
-
-	node->next = head;
-	head = node;
-	return head;
-}
-
-Node* addToTail(Node* head, int n)
-{
-	Node* node = new Node(n);
-	if (head == NULL)
-		return node;
-
-	Node* p = head;
-	while(p->next != NULL)
-		p = p->next;
-
-	p->next = node;
-	return head;
-}
 
 Node* addForward(Node* n1, Node* n2)
 {
