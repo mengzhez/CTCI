@@ -2,20 +2,20 @@
 
 using namespace std;
 
-class Node
+class BinaryTreeNode
 {
 public:
 	int value;
-	Node* left;
-	Node* right;
+	BinaryTreeNode* left;
+	BinaryTreeNode* right;
 
-	Node(int v)
+	BinaryTreeNode(int v)
 	{ 
 		value = v;
 		left = NULL;
 		right = NULL;
 	}
 
-	~Node()
+	~BinaryTreeNode()
 	{}
 };
