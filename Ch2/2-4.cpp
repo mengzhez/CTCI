@@ -3,19 +3,23 @@
 
 using namespace std;
 
-Node* partitionLinkedList(Node* head, int x)
+// Partition the linked list with a given pivot value
+LinkedListNode* partitionLinkedList(LinkedListNode* head, int x)
 {
 	if (head == NULL || head->next == NULL)
 		return head;
 
-	Node* p1 = head;
-	Node* p2 = NULL;
-	Node* mid = NULL;
+	LinkedListNode* p1 = head;
+	LinkedListNode* p2 = NULL;
+
+	// mid pointer is used to store where to insert the small element
+	LinkedListNode* mid = NULL;
+
 	while (p1 != NULL)
 	{
 		if (p1->value < x)
 		{
-			Node* temp = p1->next;
+			LinkedListNode* temp = p1->next;
 
 			if (mid == NULL)
 			{
@@ -52,14 +56,14 @@ Node* partitionLinkedList(Node* head, int x)
 
 void main()
 {
-	Node* head = new Node(1);
+	LinkedListNode* head = new LinkedListNode(1);
 	head = addToTail(head, 5);
 	head = addToTail(head, 9);
 	head = addToTail(head, 2);
 	head = addToTail(head, 4);
 	head = addToTail(head, 7);
 
-	Node* p = head;
+	LinkedListNode* p = head;
 	while(p != NULL)
 	{
 		cout << p->value << ", ";
