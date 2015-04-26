@@ -3,18 +3,21 @@
 
 using namespace std;
 
-Node* findLoopBeginning(Node* head)
+// Find the beginning of the loop in a circular linked list
+// Didn't handle when the linked list is not a circular linked list
+LinkedListNode* findLoopBeginning(LinkedListNode* head)
 {
 	if (head == NULL || head->next == NULL)
 		return head;
 
-	Node* p1 = head;
-	Node* p2 = head;
+	LinkedListNode* p1 = head;
+	LinkedListNode* p2 = head;
 	while (p1 != NULL)
 	{
 		p1 = p1->next->next;
 		p2 = p2->next;
 
+		// Let p1 has twice length of p2
 		if (p1 == p2)
 			break;
 	}
@@ -31,12 +34,12 @@ Node* findLoopBeginning(Node* head)
 
 void main()
 {
-	Node* head = new Node(1);
+	LinkedListNode* head = new LinkedListNode(1);
 	head = addToTail(head, 2);
 	head = addToTail(head, 3);
 	head = addToTail(head, 4);
 	head = addToTail(head, 5);
-	Node* p = head;
+	LinkedListNode* p = head;
 	while (p->next != NULL)
 		p = p->next;
 
