@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Check there is a feasible path between two nodes in a graph
 bool checkPath(GraphNode* n1, GraphNode* n2)
 {
 	n1->visited = true;
@@ -12,6 +13,7 @@ bool checkPath(GraphNode* n1, GraphNode* n2)
 
 	for (int i = 0; i < n1->adj.size(); i++)
 	{
+		// Use DFS
 		if (!n1->adj[i]->visited && checkPath(n1->adj[i], n2))
 			return true;
 	}
