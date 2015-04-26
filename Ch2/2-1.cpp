@@ -45,24 +45,10 @@ void main()
 	head = addToTail(head, 1);
 	head = addToTail(head, 3);
 	head = addToTail(head, 7);
-
-	LinkedListNode* p = head;
-	while(p != NULL)
-	{
-		cout << p->value << ", ";
-		p = p->next;
-	}
-	cout << "\n";
+	printLinkedList(head);
 
 	head = removeDuplicates(head);
+	printLinkedList(head);
 	
-	p = head;
-	while(p != NULL)
-	{
-		cout << p->value << ", ";
-		p = p->next;
-	}
-	cout << "\n";
-
 	system("pause");
 }
