@@ -2,6 +2,7 @@
 #include<string>
 using namespace std;
 
+// Replace all the space with "%20"
 void replaceSpaces(string &str)
 {
 	int n = str.size();
