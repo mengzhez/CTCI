@@ -62,24 +62,10 @@ void main()
 	head = addToTail(head, 2);
 	head = addToTail(head, 4);
 	head = addToTail(head, 7);
-
-	LinkedListNode* p = head;
-	while(p != NULL)
-	{
-		cout << p->value << ", ";
-		p = p->next;
-	}
-	cout << "\n";
+	printLinkedList(head);
 
 	head = partitionLinkedList(head, 6);
-
-	p = head;
-	while(p != NULL)
-	{
-		cout << p->value << ", ";
-		p = p->next;
-	}
-	cout << "\n";
+	printLinkedList(head);
 
 	system("pause");
 }
