@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int checkBalance(Node* root)
+int checkBalance(BinaryTreeNode* root)
 {
 	if (root == NULL)
 		return 0;
@@ -27,12 +27,12 @@ void main()
 	//  3   4
 	//       \
 	//        5
-	Node* root = new Node(1);
-	root->left = new Node(2);
-	root->left->left = new Node(3);
-	root->left->right = new Node(4);
-	root->left->right->right = new Node(5);
-	root->right = new Node(6);
+	BinaryTreeNode* root = new BinaryTreeNode(1);
+	root->left = new BinaryTreeNode(2);
+	root->left->left = new BinaryTreeNode(3);
+	root->left->right = new BinaryTreeNode(4);
+	root->left->right->right = new BinaryTreeNode(5);
+	root->right = new BinaryTreeNode(6);
 
 	int n = checkBalance(root);
 	cout << (n != -1 ? "True" : "False") << "\n";
