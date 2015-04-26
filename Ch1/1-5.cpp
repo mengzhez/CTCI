@@ -2,6 +2,8 @@
 #include<string>
 using namespace std;
 
+// Compress the string
+// Could be improved by using StringBuffer
 string compressString(string str)
 {
 	int n = str.size();
