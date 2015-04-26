@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Add two numbers represented as linked lists in the forward order
 LinkedListNode* addForward(LinkedListNode* n1, LinkedListNode* n2)
 {
 	int num1 = 0;
@@ -37,6 +38,7 @@ LinkedListNode* addForward(LinkedListNode* n1, LinkedListNode* n2)
 	return n;
 }
 
+// Add two numbers represented as linked lists in the reverse order
 LinkedListNode* addReverse(LinkedListNode* n1, LinkedListNode* n2)
 {
 	int num1 = 0;
