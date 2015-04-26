@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+// Set the entire row and column to zero of which the element is zero
 void setZero(vector<vector<int>> &matrix)
 {
 	int m = matrix.size();
@@ -14,6 +15,7 @@ void setZero(vector<vector<int>> &matrix)
 		{
 			if (!matrix[i][j])
 			{
+				// Find the first row where the zero lies, use it to store the colunm indices of all zeros
 				if (row == -1)
 				{
 					row = i;
@@ -26,6 +28,7 @@ void setZero(vector<vector<int>> &matrix)
 			}
 		}
 
+		// Set all the target rows to zero, except the first target row
 		if (b)
 		{
 			for (int j = 0; j < n; j++)
@@ -35,6 +38,7 @@ void setZero(vector<vector<int>> &matrix)
 		}
 	}
 
+	// Set the target columns to zero according to the information in the first target row
 	for (int j = 0; j < n; j++)
 	{
 		if (!matrix[row][j])
