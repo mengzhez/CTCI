@@ -90,22 +90,10 @@ void main()
 	LinkedListNode* nr = addReverse(n1, n2);
 
 	cout << "Forward: ";
-	LinkedListNode* p = nf;
-	while (p != NULL)
-	{
-		cout << p->value;
-		p = p->next;
-	}
-
-	cout << "\n";
+	printLinkedList(nf);
 
 	cout << "Reverse: ";
-	p = nr;
-	while (p != NULL)
-	{
-		cout << p->value;
-		p = p->next;
-	}
+	printLinkedList(nr);
 
 	cout << "\n";
 	system("pause");
