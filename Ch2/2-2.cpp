@@ -34,14 +34,7 @@ void main()
 	head = addToTail(head, 5);
 	head = addToTail(head, 6);
 	head = addToTail(head, 7);
-
-	LinkedListNode* p = head;
-	while(p != NULL)
-	{
-		cout << p->value << ", ";
-		p = p->next;
-	}
-	cout << "\n";
+	printLinkedList(head);
 
 	LinkedListNode* node = FindKthToLast(head, 2);
 	cout << node->value << "\n";
