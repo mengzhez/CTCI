@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool checkPath(Node* n1, Node* n2)
+bool checkPath(GraphNode* n1, GraphNode* n2)
 {
 	n1->visited = true;
 
@@ -24,11 +24,11 @@ void main()
 	//    1
 	//   / \
 	//  2 - 3 - 4 <- 5  
-	Node* n1 = new Node(1);
-	Node* n2 = new Node(2);
-	Node* n3 = new Node(3);
-	Node* n4 = new Node(4);
-	Node* n5 = new Node(5);
+	GraphNode* n1 = new GraphNode(1);
+	GraphNode* n2 = new GraphNode(2);
+	GraphNode* n3 = new GraphNode(3);
+	GraphNode* n4 = new GraphNode(4);
+	GraphNode* n5 = new GraphNode(5);
 	n1->adj.push_back(n2);
 	n1->adj.push_back(n3);
 	n2->adj.push_back(n1);
