@@ -3,21 +3,24 @@
 
 using namespace std;
 
-Node* removeDuplicates(Node* head)
+// Remove duplicates from an unsorted linked list
+// No additional buffer is used here. If we can use other buffers, Hash table will be better
+LinkedListNode* removeDuplicates(LinkedListNode* head)
 {
 	if (head == NULL || head->next == NULL)
 		return head;
 
-	Node* p1 = head;
-	Node* p2 = head;
+	LinkedListNode* p1 = head;
+	LinkedListNode* p2 = head;
 	while (p1->next != NULL)
 	{
 		p2 = head;
 		while (p2 != p1->next)
 		{
+			// Find and delete duplicates
 			if (p2->value == p1->next->value)
 			{
-				Node* temp = p1->next->next;
+				LinkedListNode* temp = p1->next->next;
 				delete p1->next;
 				p1->next = temp;
 				break;
@@ -35,7 +38,7 @@ Node* removeDuplicates(Node* head)
 
 void main()
 {
-	Node* head = new Node(1);
+	LinkedListNode* head = new LinkedListNode(1);
 	head = addToTail(head, 4);
 	head = addToTail(head, 1);
 	head = addToTail(head, 3);
@@ -43,7 +46,7 @@ void main()
 	head = addToTail(head, 3);
 	head = addToTail(head, 7);
 
-	Node* p = head;
+	LinkedListNode* p = head;
 	while(p != NULL)
 	{
 		cout << p->value << ", ";
