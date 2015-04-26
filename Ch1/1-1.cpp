@@ -3,7 +3,7 @@
 using namespace std;
 
 // Check if all the characters are unique
-// Didn't check whether the character is ASCII or Unicode
+// The code doesn't check whether the character is ASCII or Unicode
 bool uniqueCharacters(string str)
 {
 	// Use unordered_set to store characters, if one character appears twice, return false
