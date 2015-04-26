@@ -3,10 +3,12 @@
 #include<vector>
 using namespace std;
 
-// Clockwise rotation
+// Rotate the image in clockwise direction for 90 degrees
 void rotateImage(vector<vector<uint32_t>> &image)
 {
 	int n = image.size();
+
+	// Swap the elements along minor diagonal
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; i + j < n; j++)
@@ -17,6 +19,7 @@ void rotateImage(vector<vector<uint32_t>> &image)
 		}
 	}
 
+	// Swap the elements along horizontal mid line
 	for (int i = 0; i <= (n / 2); i++)
 	{
 		for (int j = 0; j < n; j++)
