@@ -2,19 +2,22 @@
 
 using namespace std;
 
-class Node
+class LinkedListNode
 {
 public:
 	int value;
-	Node* next;
+	LinkedListNode* next;
 
-	Node(int v)
+	LinkedListNode(int v)
 	{
 		value = v;
 		next = NULL;
 	}
+
+	~LinkedListNode()
+	{}
 };
 
-Node* addToHead(Node* head, int n);
+LinkedListNode* addToHead(LinkedListNode* head, int n);
 
-Node* addToTail(Node* head, int n);
+LinkedListNode* addToTail(LinkedListNode* head, int n);

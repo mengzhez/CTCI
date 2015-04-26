@@ -3,9 +3,9 @@
 
 using namespace std;
 
-Node* addToHead(Node* head, int n)
+LinkedListNode* addToHead(LinkedListNode* head, int n)
 {
-	Node* node = new Node(n);
+	LinkedListNode* node = new LinkedListNode(n);
 	if (head == NULL)
 		return node;
 
@@ -14,13 +14,13 @@ Node* addToHead(Node* head, int n)
 	return head;
 }
 
-Node* addToTail(Node* head, int n)
+LinkedListNode* addToTail(LinkedListNode* head, int n)
 {
-	Node* node = new Node(n);
+	LinkedListNode* node = new LinkedListNode(n);
 	if (head == NULL)
 		return node;
 
-	Node* p = head;
+	LinkedListNode* p = head;
 	while(p->next != NULL)
 		p = p->next;
 
