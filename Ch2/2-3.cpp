@@ -3,31 +3,33 @@
 
 using namespace std;
 
-void deleteMiddleNode(Node* mid)
+// Delete the node in the middle when only the access to that node is given
+// Could not delete the last node
+void deleteMiddleNode(LinkedListNode* mid)
 {
-	Node* p1 = mid;
-	Node* p2 = NULL;
-	while (p1->next != NULL)
-	{
-		p1->value = p1->next->value;
-		p2 = p1;
-		p1 = p1->next;
-	}
+	if (mid == NULL)
+		return;
+
+	LinkedListNode* p1 = mid->next;
+	LinkedListNode* p2 = mid;
+	p2->value = p1->value;
+
+	if (p1 != NULL)
+		p2->next = p1->next;
 
 	delete p1;
 	p1 = NULL;
-	p2->next = NULL;
 }
 
 void main()
 {
-	Node* head = new Node(1);
+	LinkedListNode* head = new LinkedListNode(1);
 	head = addToTail(head, 2);
 	head = addToTail(head, 3);
 	head = addToTail(head, 4);
 	head = addToTail(head, 5);
 
-	Node* p = head;
+	LinkedListNode* p = head;
 	while(p != NULL)
 	{
 		cout << p->value << ", ";
