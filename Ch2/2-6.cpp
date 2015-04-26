@@ -4,7 +4,7 @@
 using namespace std;
 
 // Find the beginning of the loop in a circular linked list
-// Didn't handle when the linked list is not a circular linked list
+// The code doesn't work when the linked list is not a circular linked list
 LinkedListNode* findLoopBeginning(LinkedListNode* head)
 {
 	if (head == NULL || head->next == NULL)
