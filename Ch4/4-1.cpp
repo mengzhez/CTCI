@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Check if the binary tree is balanced
 int checkBalance(BinaryTreeNode* root)
 {
 	if (root == NULL)
@@ -11,6 +12,7 @@ int checkBalance(BinaryTreeNode* root)
 	int leftHeight = checkBalance(root->left);
 	int rightHeight = checkBalance(root->right);
 
+	// Return the height of current node, if the tree is not balanced, return -1
 	if (abs(leftHeight - rightHeight) > 1 || leftHeight == -1 || rightHeight == -1)
 		return -1;
 	else
