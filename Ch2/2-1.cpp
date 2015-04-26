@@ -4,7 +4,7 @@
 using namespace std;
 
 // Remove duplicates from an unsorted linked list
-// No additional buffer is used here. If we can use other buffers, Hash table will be better
+// No additional buffer is used here. If we are allowed to use other buffers, Hash table will be better
 LinkedListNode* removeDuplicates(LinkedListNode* head)
 {
 	if (head == NULL || head->next == NULL)
