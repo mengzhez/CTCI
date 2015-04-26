@@ -28,24 +28,10 @@ void main()
 	head = addToTail(head, 3);
 	head = addToTail(head, 4);
 	head = addToTail(head, 5);
-
-	LinkedListNode* p = head;
-	while(p != NULL)
-	{
-		cout << p->value << ", ";
-		p = p->next;
-	}
-	cout << "\n";
+	printLinkedList(head);
 
 	deleteMiddleNode(head->next->next);
-	
-	p = head;
-	while(p != NULL)
-	{
-		cout << p->value << ", ";
-		p = p->next;
-	}
-	cout << "\n";
+	printLinkedList(head);
 
 	system("pause");
 }
