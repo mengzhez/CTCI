@@ -18,6 +18,7 @@ BinaryTreeNode* addNodeToBST(BinaryTreeNode* root, int val)
 			if (n->left == NULL)
 			{
 				n->left = node;
+				node->parent = n;
 				break;
 			}
 			else
@@ -28,6 +29,7 @@ BinaryTreeNode* addNodeToBST(BinaryTreeNode* root, int val)
 			if (n->right == NULL)
 			{
 				n->right = node;
+				node->parent = n;
 				break;
 			}
 			else
