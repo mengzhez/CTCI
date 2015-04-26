@@ -27,3 +27,17 @@ LinkedListNode* addToTail(LinkedListNode* head, int n)
 	p->next = node;
 	return head;
 }
+
+void printLinkedList(LinkedListNode* head)
+{
+	if (head == NULL)
+		return;
+
+	LinkedListNode* p = head;
+	while(p->next != NULL)
+	{
+		cout << p->value << ", ";
+		p = p->next;
+	}
+	cout << p->value << "\n";
+}

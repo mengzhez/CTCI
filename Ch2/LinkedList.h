@@ -21,3 +21,5 @@ public:
 LinkedListNode* addToHead(LinkedListNode* head, int n);
 
 LinkedListNode* addToTail(LinkedListNode* head, int n);
+
+void printLinkedList(LinkedListNode* head);
