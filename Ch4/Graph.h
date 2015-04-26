@@ -3,19 +3,19 @@
 
 using namespace std;
 
-class Node
+class GraphNode
 {
 public:
 	int value;
-	vector<Node*> adj;
+	vector<GraphNode*> adj;
 	bool visited;
 
-	Node(int v)
+	GraphNode(int v)
 	{ 
 		value = v;
 		visited = false;
 	}
 
-	~Node()
+	~GraphNode()
 	{}
 };
