@@ -4,7 +4,7 @@
 using namespace std;
 
 // Delete the node in the middle when only the access to that node is given
-// Could not delete the last node
+// The code cannot delete the last node
 void deleteMiddleNode(LinkedListNode* mid)
 {
 	if (mid == NULL)
