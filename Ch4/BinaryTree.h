@@ -19,3 +19,5 @@ public:
 	~BinaryTreeNode()
 	{}
 };
+
+BinaryTreeNode* addNodeToBST(BinaryTreeNode* root, int val);
