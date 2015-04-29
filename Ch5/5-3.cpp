@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// Print the binary representation of the next smallest number
 void printNextSmallest(int n)
 {
 	// Assume that a integer has 32 bits and the highest bit is for the sign
@@ -34,6 +35,7 @@ void printNextSmallest(int n)
 	cout << setw(10) << "Smallest: " << bitset<32>(n) << "\n";
 }
 
+// Print the binary representation of the next largest number
 void printNextLargest(int n)
 {
 	// Assume that a integer has 32 bits and the highest bit is for the sign
