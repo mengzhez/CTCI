@@ -14,6 +14,7 @@ int fetchBit(int n, int j)
 	return (n & (1 << j)) != 0;
 }
 
+// Find the missing number in a[]
 int findMissingNumber(int a[], int n)
 {
 	int x = 0;
