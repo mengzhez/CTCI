@@ -1,0 +1,24 @@
+6-1
+
+
+6-2
+
+
+6-3
+1. Fill the five-quart jug with full of water.
+2. Pour the water from five-quart jug into three-quart jug and make the three-quart jug full. Therefore, there is two-quart water remaining in the five-quart jug.
+3. Pour away the water in three-quart jug.
+4. Pour all the remaining water (two-quart) in the five-quart jug into the three-quart jug.
+5. Fully fill the five-quart jug.
+6. Pour the water from the five-quart jug into the three-quart jug until the three-quart jug becomes full.
+7. The remaining water in five-quart jug is exactly four-quart.
+
+
+6-4
+
+
+6-5
+
+
+6-6
+For locker i, the number of being toggled depends on the number of its fractions which are greater than three.
