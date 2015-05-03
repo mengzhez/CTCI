@@ -5,6 +5,7 @@
 
 
 6-2
+It is impossible. Assume it is possible to cover the entire 8x8 chess board with 31 dominos, then with the same pattern, it should be possible to implement it on 6x6 chess board with 17 dominos, 4x4 chess board with 7 dominos, 2x2 chess board with 1 domino. Apparently, in a 2x2 chess board with two diagonal corners being cut off, it is impossible to do so. Therefore, the assumption is not valid at this point.
 
 
 6-3
