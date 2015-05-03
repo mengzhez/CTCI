@@ -18,6 +18,7 @@
 
 
 6-4
+[Comment: I don't understand the question yet]
 
 
 6-5
@@ -27,6 +28,7 @@
 4. So in the worst case, the total drops becomes (100 / x) + (x - 2).
 5. Since (100 / x) + x >= 20 and the equivalence happens when x = 10.
 6. To summary, we will drop the first egg on the 1st floor, the 11th floor, the 21th floor until the egg is broken. If it is broken on the 21th floor, we drop the second egg on the 12th floor, the 13th floor, the 14th floor until the second is broken. Then N the last successful floor.
+[Comment: Frankly speaking, from personal experience, apparently the egg will be broken on the second floor! Come on, it is egg!]
 
 
 6-6
