@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// Sort the stack in the ascending order using only one additional stack
+// O(N^2) time and O(N) space
 void sortStack(stack<int> &s)
 {
 	stack<int> help;
