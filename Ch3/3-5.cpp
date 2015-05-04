@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// Implement a queue using two stacks
+// Could do better by implementing a lazy approach where the elements stay in one stack until they must be moved
 template <class Type> class MyQueue
 {
 private:
