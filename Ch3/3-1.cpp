@@ -2,6 +2,8 @@
 #include<vector>
 using namespace std;
 
+// Implement three stacks using a single array
+// Implemented using a 2D array
 template <class Type> class MyStack
 {
 private:
