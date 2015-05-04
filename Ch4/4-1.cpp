@@ -19,7 +19,6 @@ int checkBalance(BinaryTreeNode* root)
 		return max(leftHeight, rightHeight) + 1;
 }
 
-
 void main()
 {
 	//      1
