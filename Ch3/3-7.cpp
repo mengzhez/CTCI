@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Animal class (dog and cat)
 class Animal
 {
 public:
@@ -37,6 +38,8 @@ Animal* addToTail(Animal* head, string name, int type)
 	return head;
 }
 
+// Implement an animal shelter which could pop dog or cat
+// Could also implement it using two queues
 class AnimalShelter
 {
 private:
