@@ -4,7 +4,8 @@
 
 using namespace std;
 
-// Move the top n plates fro stack i1 to i2 (0-based index)
+// Implement the problem Towers of Hanoi using stacks
+// Move the top n plates from stack i1 to i2 (0-based index)
 void moveStack(vector<stack<int>> &s, int n, int i1, int i2)
 {
 	// Exit condition
