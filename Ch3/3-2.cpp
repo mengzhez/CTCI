@@ -2,6 +2,8 @@
 #include<stack>
 using namespace std;
 
+// Implement a stack with min function
+// Could do better by not storing additional data in _mins
 template <class Type> class MyStack
 {
 private:
