@@ -6,5 +6,6 @@ Ch2 - Linked Lists <br />
 Ch3 - Stacks and Queues <br />
 Ch4 - Trees and Graphs <br />
 Ch5 - Bit Manipulation <br />
+Ch6 - Brain Teaser (⊙_⊙)  <br />
 
 To be continued...
