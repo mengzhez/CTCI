@@ -4,6 +4,7 @@ using namespace std;
 
 const int _STACK_MAX = 2;
 
+// Implement a set of stacks
 template <class Type> class SetOfStacks
 {
 private:
@@ -24,6 +25,7 @@ public:
 		if (n == 0)
 			_values = vector<vector<Type>>(1, vector<Type>());
 
+		// Create a new stack
 		if (n > 0 && _values[n - 1].size() >= _STACK_MAX)
 		{
 			vector<Type> v = vector<Type>(1, val);
@@ -53,6 +55,7 @@ public:
 		}
 	}
 
+	// Pop the element at a specific stack
 	void popAt(int index)
 	{
 		int n = _values.size();
