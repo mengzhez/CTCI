@@ -19,7 +19,11 @@ It is impossible. Assume it is possible to cover the entire 8x8 chess board with
 
 
 6-4
-[Comment: I don't understand the question yet]
+If there are n people with blue eyes, then it will take n days for the blue eyes people to leave.
+1. Suppose there is only one guy who has blue eyes, on the first day, he will notice that all other people do not have blue eyes. Then he can infer that he is the only person who should leave...
+2. If there are two people with blue eyes, then on the first day, they will consider each other to be the only blue eyes on the island. But on the second day, they will find that no one took the flight and they realize they have blue eyes himself. Then they left together. For normal people, they will see that there are two blue eyes people, so they should wait three days.
+3. The rest can be inferred in the same manner...
+[Comment: There must be no mirror on the island.]
 
 
 6-5
