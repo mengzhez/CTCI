@@ -1,0 +1,18 @@
+7-1
+In the first game, the winning probability is P1 = p.
+In the second game, the winning probability is P2 = (C32 * p^2 * (1-p)) = 3p^2(1-p).
+By comparing P1 and P2, we will get when p is in ((3 - sqrt(5)) / 2, (3 + sqrt(5)) / 2), we pick up Game 2, otherwise Game 1.
+
+
+7-2
+Each ant has two options to start walking. So if there are n ants, the total number of choices is 2^n. However, there are only two choices that none of the ants will collide with others (all of them walk on the clockwise direction or counterclockwise).
+So the probability of collision is (2^n - 2) / 2^n.
+
+
+7-3
+If we have the equations of these two lines, we could check their slopes to determine whether they are parallel with each other. If so, they do not intersect, otherwise yes.
+
+
+7-5
+Find the centers of these two squares. 
+Connect the centers to find the line.
