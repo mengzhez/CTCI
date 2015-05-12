@@ -13,6 +13,13 @@ So the probability of collision is (2^n - 2) / 2^n.
 If we have the equations of these two lines, we could check their slopes to determine whether they are parallel with each other. If so, they do not intersect, otherwise yes.
 
 
+7-4
+Implementation should include bits shift to be more efficient. 
+
+
 7-5
 Find the centers of these two squares. 
 Connect the centers to find the line.
+
+
+7-6
