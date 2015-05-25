@@ -4,6 +4,7 @@
 using namespace std;
 
 // Check if a binary tree is a binary search tree
+// Could use a global variable to implement in-order traversal to make the algorithm better
 bool checkBST(BinaryTreeNode* root)
 {
 	if (root == NULL)
