@@ -14,7 +14,7 @@ If we have the equations of these two lines, we could check their slopes to dete
 
 
 7-4
-Implementation should include bits shift to be more efficient. 
+Implementation should include bits shift to make the algorithm more efficient. 
 
 
 7-5
