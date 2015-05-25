@@ -44,6 +44,7 @@ int findNodeByHeight(BinaryTreeNode* root, vector<BinaryTreeNode*> &v, int h)
 
 // Check if tree2 is a subtree of tree1
 // Tested with small binary trees, didn't test on large binary trees
+// Could use the concepts of string and substring to make the algorithm simpler and better
 bool checkSubtree(BinaryTreeNode* root1, BinaryTreeNode* root2)
 {
 	// Compute the height of tree2
