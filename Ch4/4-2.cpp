@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Check there is a feasible path between two nodes in a graph
+// Check if there is a feasible path between two nodes in a graph
 bool checkPath(GraphNode* n1, GraphNode* n2)
 {
 	n1->visited = true;
