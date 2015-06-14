@@ -1,7 +1,7 @@
 7-1
 In the first game, the winning probability is P1 = p.
-In the second game, the winning probability is P2 = (C32 * p^2 * (1-p)) = 3p^2(1-p).
-By comparing P1 and P2, we will get when p is in ((3 - sqrt(5)) / 2, (3 + sqrt(5)) / 2), we pick up Game 2, otherwise Game 1.
+In the second game, the winning probability is P2 = (C32 * p^2 * (1-p)) + p^3 = 3p^2 - 2p^3.
+By comparing P1 and P2, we will get when p < 0.5, we pick up Game 1, otherwise Game 2. So, it doesn't matter.
 
 
 7-2
@@ -14,7 +14,11 @@ If we have the equations of these two lines, we could check their slopes to dete
 
 
 7-4
-Implementation should include bits shift to make the algorithm more efficient. 
+Substraction: add the negative b
+Multiplication: should check the values of a and b first and add the big number with the small number of times.
+Division: Apply the idea of multiplication, we could add number b until the sum is greater than a.
+
+Should consider negative values of a and b. 
 
 
 7-5
@@ -23,3 +27,4 @@ Connect the centers to find the line.
 
 
 7-6
+We could check the each line between two nodes and use a hash table to store it. The equivalence of two lines should be considered as the slope and y-intercept are within an epsilon value. 
