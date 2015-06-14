@@ -7,7 +7,7 @@ void printBinaryRep(double n)
 {
 	char c[32] = {'0'};
 	c[0] = '0';
-	c[1] = ',';
+	c[1] = '.';
 
 	int exp = -1;
 	for (int i = 2; i < 32; i++)
