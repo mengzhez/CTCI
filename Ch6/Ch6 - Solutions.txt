@@ -23,18 +23,21 @@ If there are n people with blue eyes, then it will take n days for the blue eyes
 1. Suppose there is only one guy who has blue eyes, on the first day, he will notice that all other people do not have blue eyes. Then he can infer that he is the only person who should leave...
 2. If there are two people with blue eyes, then on the first day, they will consider each other to be the only blue eyes on the island. But on the second day, they will find that no one took the flight and they realize they have blue eyes himself. Then they left together. For normal people, they will see that there are two blue eyes people, so they should wait three days.
 3. The rest can be inferred in the same manner...
-[Comment: There must be no mirror on the island.]
+[Comment: There is no mirror on the island for sure.]
 
 
 6-5
-1. We divide the 100 floors into x equivalent intervals. 
-2. To ensure that two eggs would be enough to find N, we use the strategy that drop the egg on the floor of each interval. For exameple, if x = 5, we drop the eggs on the 1st floor, the 21th floor, the 41th floor...
-3. If the first egg is broken, we drop the second egg on each floor starting from the last successful one.
-4. So in the worst case, the total drops becomes (100 / x) + (x - 2).
-5. Since (100 / x) + x >= 20 and the equivalence happens when x = 10.
-6. To summary, we will drop the first egg on the 1st floor, the 11th floor, the 21th floor until the egg is broken. If it is broken on the 21th floor, we drop the second egg on the 12th floor, the 13th floor, the 14th floor until the second is broken. Then N the last successful floor.
-[Comment: Frankly speaking, from personal experience, apparently the egg will be broken on the second floor! Come on, it is egg!]
+1. We divide the 100 floors into multiple intervals and assume we start droping from floor x. 
+2. To ensure that two eggs would be enough to find N, we use the strategy that drop the first egg on the floor of each interval. 
+3. If the first egg breaks, we drop the second egg on each floor starting from the last successful one. To make sure that we are decreasing the number of potential drops for the second egg. We reduce the size of the interval on each try.
+4. In the worst case, the total drops becomes x + (x - 1) + (x - 2) + ... + 1.
+5. If we let x + (x - 1) + (x - 2) + ... + 1 = 100, we can get x = 14.
+6. To summary, we will drop the first egg on the 14th floor, then 27th floor (14 + 13 = 27), then 39th floor (14 + 13 + 12 = 39) until the egg breaks. Then we drop the second egg floor by floor. 
+[Comment: From personal experience, apparently the egg will break from the second floor! It is egg!]
 
 
 6-6
-For locker i, the number of being toggled depends on the number of its fractions which are greater than three.
+1. For locker i, the number of being toggled depends on the number of its factors.
+2. If the number of factor is odd, then the locker will be open at the end.
+3. Only the perfect squares has the number of factors which is odd. (Because the square root only counts one time)
+4. From 1 to 100, there are 10 perfect squares. So there will be 10 lockers remain open.
