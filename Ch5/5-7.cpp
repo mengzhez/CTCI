@@ -15,6 +15,8 @@ int fetchBit(int n, int j)
 }
 
 // Find the missing number in a[]
+// If we assume the length of n is log2(n), then this implementation is O(n log(n))
+// We could do better by counting the numbers of 0s and 1s for each bit
 int findMissingNumber(int a[], int n)
 {
 	int x = 0;
