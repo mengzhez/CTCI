@@ -3,6 +3,7 @@
 using namespace std;
 
 // Find the number of bits required to convert from int a to int b
+// This can be improved by counting how many 1s in (a^b)
 int findNumberOfBits(int a, int b)
 {
 	// Assume integer has 32 bits
