@@ -4,6 +4,8 @@
 using namespace std;
 
 // Swap the adjacent bits
+// This implemetatin is not efficient, a more efficient should be using masks to get bits on odd positions and even positions separately
+// Finally merge the two sequences of bits
 int swapBits(int n)
 {
 	// Assume that the integer has 32 bits and the highest bit is the sign
