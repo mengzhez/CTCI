@@ -30,9 +30,9 @@ void drawHorizontalLine(byte scr[], int w, int x1, int x2, int y)
 		}
 
 		if (i == byte1)
-			scr[i] |= (~((1 << bit1) - 1)); // Set 'bit 1' to 'bit 8' to 1
+			scr[i] |= (~((1 << bit1) - 1)); // Set 'bit1' to 'bit 8' to 1
 		else if (i == byte2)
-			scr[i] |= ((1 << (bit2 + 1)) - 1); // Set 'bit 0' to 'bit 2' to 1
+			scr[i] |= ((1 << (bit2 + 1)) - 1); // Set 'bit 0' to 'bit2' to 1
 		else
 			scr[i] = 255; // Set all the bits to 1
 	}
